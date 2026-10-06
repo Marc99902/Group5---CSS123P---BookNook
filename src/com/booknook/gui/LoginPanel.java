@@ -90,13 +90,6 @@ public class LoginPanel extends JPanel {
         gbc.insets = new Insets(20, 8, 4, 8);
         card.add(loginButton, gbc);
 
-        JLabel hint = new JLabel("Use admin for both fields during the demo", SwingConstants.CENTER);
-        hint.setFont(Theme.bodyFont(java.awt.Font.PLAIN, 11));
-        hint.setForeground(Theme.LATTE_TAN);
-        gbc.gridy = 5;
-        gbc.insets = new Insets(4, 8, 8, 8);
-        card.add(hint, gbc);
-
         loginButton.addActionListener(e -> login());
         passwordField.addActionListener(e -> login());
 
